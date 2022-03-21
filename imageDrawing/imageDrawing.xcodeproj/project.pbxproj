@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D315A2F27E0D822001405D3 /* DrawingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D315A2E27E0D822001405D3 /* DrawingScreen.swift */; };
 		0D445CF627DEAA5F002E2A02 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D445CF527DEAA5F002E2A02 /* Tests_iOS.swift */; };
 		0D445CF827DEAA5F002E2A02 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D445CF727DEAA5F002E2A02 /* Tests_iOSLaunchTests.swift */; };
 		0D445D0227DEAA5F002E2A02 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D445D0127DEAA5F002E2A02 /* Tests_macOS.swift */; };
@@ -20,6 +21,7 @@
 		0D445D1D27DEAA95002E2A02 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D445D1C27DEAA95002E2A02 /* Home.swift */; };
 		0D445D1F27DEB212002E2A02 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D445D1E27DEB212002E2A02 /* ImagePicker.swift */; };
 		0D445D2127DEB521002E2A02 /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D445D2027DEB521002E2A02 /* DrawingViewModel.swift */; };
+		0D8B22DF27E15D66000554FA /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8B22DE27E15D66000554FA /* TextBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D315A2E27E0D822001405D3 /* DrawingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingScreen.swift; sourceTree = "<group>"; };
 		0D445CDD27DEAA5D002E2A02 /* imageDrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageDrawingApp.swift; sourceTree = "<group>"; };
 		0D445CDE27DEAA5D002E2A02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D445CDF27DEAA5F002E2A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		0D445D1C27DEAA95002E2A02 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		0D445D1E27DEB212002E2A02 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0D445D2027DEB521002E2A02 /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
+		0D8B22DE27E15D66000554FA /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			children = (
 				0D445D1C27DEAA95002E2A02 /* Home.swift */,
 				0D445D1E27DEB212002E2A02 /* ImagePicker.swift */,
+				0D315A2E27E0D822001405D3 /* DrawingScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 		0D445D1A27DEAA7D002E2A02 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D8B22DE27E15D66000554FA /* TextBox.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,7 +261,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					0D445CE327DEAA5F002E2A02 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -334,8 +340,10 @@
 			files = (
 				0D445D0727DEAA5F002E2A02 /* ContentView.swift in Sources */,
 				0D445D1F27DEB212002E2A02 /* ImagePicker.swift in Sources */,
+				0D315A2F27E0D822001405D3 /* DrawingScreen.swift in Sources */,
 				0D445D2127DEB521002E2A02 /* DrawingViewModel.swift in Sources */,
 				0D445D1D27DEAA95002E2A02 /* Home.swift in Sources */,
+				0D8B22DF27E15D66000554FA /* TextBox.swift in Sources */,
 				0D445D0527DEAA5F002E2A02 /* imageDrawingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +569,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -589,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
