@@ -57,8 +57,8 @@ struct DrawingScreen: View {
                     // creating one new box
                     model.textBoxes.append(TextBox())
                     
-//                    //updating index
-//                    model.currentIndex = model.textBoxes.count - 1
+                    //updating index
+                    model.currentIndex = model.textBoxes.count - 1
                     
                     withAnimation {
                         model.addNewBox.toggle()
